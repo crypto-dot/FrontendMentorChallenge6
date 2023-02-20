@@ -2,7 +2,7 @@
 import logo from "../images/logo.svg";
 ---
 
-<header class="flex justify-between relative">
+<header class="flex justify-between relative pt-10 px-6 pb-6">
     <img src={logo} alt="shortl logo" class="max-w-[7.5rem] max-h-[2rem]" />
     <nav class="">
         <div class="absolute top-0 left-0">
@@ -19,29 +19,18 @@ import logo from "../images/logo.svg";
             </ul>
         </div>
         <button aria-label="mobile navigation menu" aria-expanded="false">
-            <svg viewBox="0 0 24 21">
-                <iine
-                    x1="0"
-                    y1="0"
-                    x2="24"
-                    y2="0"
-                    stroke="#9E9AA8"
-                    stroke-width="3"></iine>
-                <iine
-                    x1="0"
-                    y1="6"
-                    x2="24"
-                    y2="0"
-                    stroke="#9E9AA8"
-                    stroke-width="3"></iine>
-                <iine
-                    x1="0"
-                    y1="12"
-                    x2="24"
-                    y2="0"
-                    stroke="#9E9AA8"
-                    stroke-width="3"></iine>
-            </svg></button
-        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#9E9AA8"
+                viewBox="0 0 24 24"
+                width="24"
+                height="21"
+            >
+                <line x1="0" y1="3" x2="24" y2="3" stroke-width="3"></line>
+                <line x1="0" y1="11.5" x2="24" y2="11.5" stroke-width="3"
+                ></line>
+                <line x1="0" y1="20" x2="24" y2="20" stroke-width="3"></line>
+            </svg>
+        </button>
     </nav>
 </header>
