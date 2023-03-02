@@ -3,10 +3,12 @@ import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
+import { LinkShortner } from "../components/LinkShortner";
 ---
 
 <Layout>
     <Nav />
     <Hero />
+  <LinkShortner client:load/>
     <Footer />
 </Layout>
