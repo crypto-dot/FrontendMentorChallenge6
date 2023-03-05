@@ -33,7 +33,10 @@ module.exports = {
 				},
 				secondarytxt: {
 					DEFAULT: '#9E9AA8',
-				}
+				},
+        statsSectionBg: {
+          DEFAULT: '#EFF1F7'
+        }
 			},
 		},
     fontSize: {
@@ -80,7 +83,7 @@ module.exports = {
     },
     width: {
       btnSm: '12.3125rem',
-      btnLg: '17.4375rem',
+      btnMd: '17.4375rem',
       btnXlg: '18.4375rem',
     },
     height: {

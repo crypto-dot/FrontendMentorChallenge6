@@ -2,10 +2,14 @@
 import logo from "../images/logo.svg";
 ---
 
-<header class="flex justify-between relative pt-10 px-6 pb-6 font-bold font-sans text-white">
+<header
+    class="flex justify-between relative pt-10 px-6 pb-6 font-bold font-sans text-white"
+>
     <img src={logo} alt="shortl logo" class="max-w-[7.5rem] max-h-[2rem]" />
     <nav role="navigation">
-        <div class="absolute left-0 w-[calc(100%-3rem)] left-6 top-24 bg-callToActionBg z-10 rounded">
+        <div
+            class="absolute w-[calc(100%-3rem)] left-6 top-24 bg-callToActionBg z-10 rounded"
+        >
             <ul class="px-6 pt-10 pb-[1.9375rem] flex flex-col gap-[1.875rem]">
                 <li class="text-center"><a href="">Features</a></li>
                 <li class="text-center"><a href="">Pricing</a></li>
@@ -15,7 +19,10 @@ import logo from "../images/logo.svg";
                 class="px-6 pb-10 pt-[1.9375rem] flex flex-col items-center py-px-[2rem] gap-[1.875rem] before:absolute before:top-0 before:h-[1px] before:bg-secondarytxt before:w-[80%] before:left-[10%] relative"
             >
                 <li class="text-center"><a href="">Login</a></li>
-                <li class="text-center"><a href="" class="bg-primary w-btnSm block rounded-btn">Setup</a></li>
+                <li class="text-center">
+                    <a href="" class="bg-primary w-btnSm block rounded-btn"
+                        >Setup</a>
+                </li>
             </ul>
         </div>
         <button aria-label="mobile navigation menu" aria-expanded="false">

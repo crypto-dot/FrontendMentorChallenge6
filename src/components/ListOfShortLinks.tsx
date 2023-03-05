@@ -4,7 +4,7 @@ import React from "react"
 export const ListOfShortLinks = (props: {shortURLs: ShortLink[]}) => {
   
   return (
-    <ul> {props.shortURLs.map((shortURLItem,index) => {
+    <ul className="flex flex-col gap-6"> {props.shortURLs.map((shortURLItem,index) => {
       return (<ShortURL shortURL={shortURLItem.shortURL} longURL={shortURLItem.longURL} key={index}/>) } )} </ul>
-  )
+  );
 }
