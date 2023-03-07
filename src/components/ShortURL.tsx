@@ -18,17 +18,20 @@ export const ShortURL = (props: { shortURL: string, longURL: string}) => {
       })
       .catch(
         (err : any) => {
-          console.log()
+          console.error('Unable to copy text to clipboard!');
+          console.error(err);
         }
-      )
+      );
   }
   return (
-    <li className='bg-white w-[100%-3rem]'> 
-      <article>
-      <h1 aria-label='long URL' className="mb-[.8125rem]">{props.longURL}</h1>
-      <div>
-        <h2 aria-label='short URL'>{props.shortURL}</h2> 
-        <button onClick={handleCopy} disabled={isCopied} aria-pressed={isCopied} aria-label="Copy the short URL">{isCopied ? 'Copied' : 'Copy'}</button>
+    <li className='bg-white w-[calc(100%-3rem)] relative left-6 rounded-sm'> 
+      <article className='pb-4 h-shortLinkArticle'>
+     <div className='pl-4 h-shortLinkH1Height flex items-center'> <h1 aria-label='long URL' className='tracking-wide w-[100%] overflow-hidden whitespace-nowrap text-ellipsis' >{props.longURL}</h1> </div>
+    <div className='pl-4 border-t border-t-secondarytxt text-secondary tracking-wide h-[calc(100%-3rem)] flex flex-col justify-between pt-[.4375rem]'>
+        <div className='h-[2.25rem] pr-4 flex items-center'> 
+        <h2 aria-label='short URL' className='text-primary w-[100%] overflow-hidden whitespace-nowrap text-ellipsis'>{props.shortURL}</h2>
+      </div>
+        <button className='w-btnXlg h-btnSm bg-primary disabled:bg-primary-hover focus:bg-primary-hover hover:bg-primary-hover text-white' onClick={handleCopy} disabled={isCopied} aria-pressed={isCopied} aria-label='Copy the short URL'>{isCopied ? 'Copied' : 'Copy'}</button>
       </div>
     </article> 
     </li>

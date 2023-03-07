@@ -89,10 +89,16 @@ module.exports = {
     height: {
       btnSm: '2.5rem',
       btnMd: '3rem',
-      btnLg: '3.5rem'
+      btnLg: '3.5rem',
+      shortLinkArticle: '9.6875rem',
+      shortLinkH1Height: '3rem',
     },
     fontFamily: {
       sans: ['Poppins', defaultTheme.fontFamily.sans]
+    },
+    backgroundImage: {
+      shortnMobile: 'url("./src/images/bg-shorten-mobile.svg"), linear-gradient(#3A3054,#3A3054)',
+      shortnerDesk:  'url("./src/images/bg-shorten-desktop.svg")'
     }
 	},
 	plugins: [],
