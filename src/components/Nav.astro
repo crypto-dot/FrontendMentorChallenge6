@@ -7,9 +7,9 @@ import logo from "../images/logo.svg";
 >
     <img src={logo} alt="shortl logo" class="max-w-[7.5rem] max-h-[2rem]" />
     <nav role="navigation">
-        <div
-            class="absolute w-[calc(100%-3rem)] left-6 top-24 bg-callToActionBg z-10 rounded"
-        >
+      <div class="absolute w-[calc(100%-3rem)] left-6 top-24 bg-callToActionBg z-10 rounded hidden"
+           id="navMenu" 
+    >
             <ul class="px-6 pt-10 pb-[1.9375rem] flex flex-col gap-[1.875rem]">
                 <li class="text-center"><a href="">Features</a></li>
                 <li class="text-center"><a href="">Pricing</a></li>
@@ -25,7 +25,7 @@ import logo from "../images/logo.svg";
                 </li>
             </ul>
         </div>
-        <button aria-label="mobile navigation menu" aria-expanded="false">
+        <button id='navBtn' aria-label="mobile navigation menu" aria-expanded="false">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="#9E9AA8"
@@ -41,3 +41,10 @@ import logo from "../images/logo.svg";
         </button>
     </nav>
 </header>
+
+<script>
+
+import {navMenu} from '../scripts/navMenu';
+
+navMenu;
+</script>
