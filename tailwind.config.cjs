@@ -99,7 +99,20 @@ module.exports = {
     backgroundImage: {
       shortnMobile: 'url("./src/images/bg-shorten-mobile.svg"), linear-gradient(#3A3054,#3A3054)',
       shortnerDesk:  'url("./src/images/bg-shorten-desktop.svg")'
-    }
+    },
+    keyframes: {
+      shrink: {
+        '0%': {
+          width: 'auto'
+        },
+        '100%': {
+          width: '0'
+        }
+      }
+    },
+    animation: {
+      shrink: 'shrink 1s ease-out',
+    },
 	},
 	plugins: [],
 }
