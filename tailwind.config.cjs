@@ -86,6 +86,10 @@ module.exports = {
       btnMd: '17.4375rem',
       btnXlg: '18.4375rem',
     },
+    maxWidth: {
+      'shortnerInput': '85%',
+      'copyBtn':'91%'
+    },
     height: {
       btnSm: '2.5rem',
       btnMd: '3rem',
