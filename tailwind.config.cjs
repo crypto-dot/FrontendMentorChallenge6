@@ -38,19 +38,20 @@ module.exports = {
           DEFAULT: '#EFF1F7'
         }
 			},
-		},
-    fontSize: {
+      fontSize: {
       xs: '.75rem',
       sm: '.9365rem',
       base: '1rem',
       lg: '1.125rem',
       xl: '2.625rem',
+      statsHeader: '1.75rem',
       // Desktop
       xsDesk: '.9365rem',
       smDesk: '1rem',
       baseDesk: '1.25rem',
       lgDesk: '1.375rem',
-      xlDesk: '3rem'
+      xlDesk: '3rem',
+      statsHeaderDesk: '1.75rem',
     },
     letterSpacing: {
       tightest: '-.065625rem',
@@ -80,11 +81,13 @@ module.exports = {
       sm: '.3125rem',
       DEFAULT: '0.625rem',
       btn: '1.75rem',
+      statsIcons: '50%',
     },
     width: {
       btnSm: '12.3125rem',
       btnMd: '17.4375rem',
       btnXlg: '18.4375rem',
+      statsIcons: '5.5rem',
     },
     maxWidth: {
       'shortnerInput': '85%',
@@ -96,6 +99,12 @@ module.exports = {
       btnLg: '3.5rem',
       shortLinkArticle: '9.6875rem',
       shortLinkH1Height: '3rem',
+      statsIcons: '5.5rem',
+    },
+    padding: {
+      'article-top': '4.8125rem',
+      'article-sides': '2rem',
+      'article-bottom': '2.5625rem',
     },
     fontFamily: {
       sans: ['Poppins', defaultTheme.fontFamily.sans]
@@ -117,6 +126,7 @@ module.exports = {
     animation: {
       shrink: 'shrink 1s ease-out',
     },
+		},
 	},
 	plugins: [],
 }
