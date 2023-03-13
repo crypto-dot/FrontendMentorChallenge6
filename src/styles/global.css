@@ -14,3 +14,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+.line__middle {
+  transition: opacity 1s ease;
+}
+#navBtn > .hamburger > line {
+  transition: .5s ease;
+}
+
+#navBtn[aria-expanded='true'] > .hamburger > .line__start{
+  transform: translateY(8.5px);
+  transform: rotate(45deg);
+  transform-origin: 2px 8px;
+}
+#navBtn[aria-expanded='true'] > .hamburger > .line__end {
+  transform: translateY(-8.5px);
+  transform: rotate(-45deg);
+  transform-origin: 2px 15px;
+}
+#navBtn[aria-expanded='true'] > .hamburger > .line__middle { 
+  opacity: 0;
+}
