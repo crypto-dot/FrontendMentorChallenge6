@@ -2,13 +2,13 @@
 interface Props {
   title: string,
   desc: string,
-  svg: HTMLElement,
+  svgURL: string,
 }
-const {title, desc, svg} = Astro.props;
+const {title, desc, svgURL} = Astro.props;
 ---
 
-<article>
+<article class="relative bg-white class pt-[7.625rem] px-8 pb-8 ">
     <h1>{title}</h1>
-  <div class="absolute top-[-2.75rem] w-statsIcons h-statsIcons bg-secondary rounded-statsIcons flex items-center justify-center">{svg}</div>
-    <p> {desc} </p>
+  <div class="absolute top-[-2.75rem] w-statsIcons h-statsIcons bg-secondary rounded-statsIcons flex items-center justify-center left-[calc(50%-2.75rem)]"><img src={svgURL}/></div>
+    <p class="leading-tightDesk"> {desc} </p>
 </article>
