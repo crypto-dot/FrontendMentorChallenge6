@@ -85,12 +85,11 @@ module.exports = {
     },
     width: {
       btnSm: '12.3125rem',
-      btnMd: '17.4375rem',
+      btnMd: '85.4%',
       btnXlg: '18.4375rem',
       statsIcons: '5.5rem',
     },
     maxWidth: {
-      'shortnerInput': '85%',
       'copyBtn':'91%'
     },
     height: {
