@@ -11,14 +11,14 @@ const customizeTitle = 'Fully Customizable';
 const customizeDesc = 'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.';
 ---
 
-<section class='bg-statsBg flex flex-col gap-[5.75rem] pb-20'> 
-  <header class='w-[100%] flex flex-col items-center'>
+<section class='bg-statsBg flex flex-col gap-[5.75rem] pb-20 sm:items-center'> 
+  <header class='w-[100%] flex flex-col items-center sm:max-w-[500px]'>
     <h1 class='text-primarytxt mb-4 font-bold text-statsHeader tracking-tighter leading-extraLoose'>Advanced Statistics</h1>
     <p class='text-center text-secondarytxt tracking-wide leading-normal
       px-6'>
       Track how your links are performing across the web with our advanced statistics dashboard</p>
   </header>
-  <div class="flex flex-col gap-[5.75rem] after:w-2 after:bg-primary after:h-[100%] after:absolute after:top-0 after:left-[50%] relative">
+  <div class="flex flex-col gap-[5.75rem] after:w-2 after:bg-primary after:h-[100%] after:absolute after:top-0 after:left-[50%] relative sm:items-center">
     <Card title={brandTitle} desc={brandDesc} svgURL={brandIcon}/>
     <Card title={detailedTitle} desc={detailedDesc} svgURL={detailedRecordsIcon}/>
     <Card title={customizeTitle} desc={customizeDesc} svgURL={customizeIcon}/>
