@@ -2,11 +2,11 @@
 @font-face {
   font-family: 'Poppins';
   font-weight: 700;
-  src: url('/public/fonts/Poppins-Bold.ttf');}
+  src: url('/fonts/Poppins-Bold.ttf');}
 @font-face {
   font-family: 'Poppins';
   font-weight: 500;
-  src: url('/public/fonts/Poppins-Medium.ttf');}
+  src: url('/fonts/Poppins-Medium.ttf');}
 *,
 *::before,
 *::after {
