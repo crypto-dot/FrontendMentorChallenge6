@@ -1,6 +1,6 @@
-import { ShortLink } from "./types";
+import type { ShortLink } from "./types";
 
 export const dummyData: ShortLink[] = [
   {shortURL: 'TESTsadfasdfasdfasdfsadfasdfasdfasdfasdfadsf', longURL: 'longTest'},
-{shortURL: 'TEST2', longURL: 'longTest2'}
+  {shortURL: 'TEST2', longURL: 'longTest2'}
 ]

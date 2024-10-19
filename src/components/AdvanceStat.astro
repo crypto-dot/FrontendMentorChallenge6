@@ -5,10 +5,13 @@ import customizeIcon from '../images/icon-fully-customizable.svg';
 import Card from './Card.astro';
 const brandTitle = 'Brand Recognition';
 const brandDesc = 'Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.';
+const brandAltTag = 'Bar chart icon';
 const detailedTitle = 'Detailed Records';
 const detailedDesc = 'Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.';
+const detailedAltTag = 'Gauge meter icon';
 const customizeTitle = 'Fully Customizable';
 const customizeDesc = 'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.';
+const customizeTag = 'Art Supplies icon';
 ---
 
 <section class='bg-statsBg flex flex-col gap-[5.75rem] pb-20 sm:items-center'> 
@@ -19,8 +22,8 @@ const customizeDesc = 'Improve brand awareness and content discoverability throu
       Track how your links are performing across the web with our advanced statistics dashboard</p>
   </header>
   <div class="flex flex-col gap-[5.75rem] after:w-2 after:bg-primary after:h-[100%] after:absolute after:top-0 after:left-[50%] relative sm:items-center">
-    <Card title={brandTitle} desc={brandDesc} svgURL={brandIcon.src}/>
-    <Card title={detailedTitle} desc={detailedDesc} svgURL={detailedRecordsIcon.src}/>
-    <Card title={customizeTitle} desc={customizeDesc} svgURL={customizeIcon.src}/>
+    <Card altTag={brandAltTag} title={brandTitle} desc={brandDesc} svgURL={brandIcon.src}/>
+    <Card altTag={detailedAltTag} title={detailedTitle} desc={detailedDesc} svgURL={detailedRecordsIcon.src}/>
+    <Card altTag={customizeTag} title={customizeTitle} desc={customizeDesc} svgURL={customizeIcon.src}/>
   </div>
 </section>

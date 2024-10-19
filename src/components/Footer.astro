@@ -5,20 +5,30 @@ import iconFacebook from "../images/icon-facebook.svg";
 import iconTwitter from "../images/icon-twitter.svg";
 import iconInstagram from "../images/icon-instagram.svg";
 import iconPinterest from "../images/icon-pinterest.svg";
-const socialMediaList: string[] = [iconFacebook.src,iconTwitter.src,iconInstagram.src,iconPinterest.src];
+interface Social {
+  url: string,
+  altTag: string
+}
+const socialMediaList: Social[] = [
+  {url: iconFacebook.src, altTag: "Facebook icon"},
+  {url: iconTwitter.src, altTag: "Twitter icon"},
+  {url: iconInstagram.src, altTag: "Instagram icon"},
+  {url: iconPinterest.src, altTag: "Pinterest icon"}
+];
+
 const featureList: string[] = ["Link Shortening", "Branded Links", "Analytics"];
 const resourceList: string[] = ["Blog", "Developers", "Support"];
 const companyList: string[] = ["About", "Our Team", "Careers", "Contact"];
 ---
 
 <footer class="bg-footerBg flex items-center flex-col gap-12 pt-14 pb-14">
-  <img src={logoLight.src} alt="shortly logo" class="max-w-[7.5rem]" />
+  <img src={logoLight.src} loading="lazy" alt="shortly logo" class="max-w-[7.5rem]" />
   <div class="flex flex-col gap-10">
     <FooterListLink title="Features" linkList={featureList}/>  
     <FooterListLink title="Resources" linkList={resourceList}/>
     <FooterListLink title="Company" linkList={companyList}/>
   </div>
   <ul class="flex gap-6">
-    {socialMediaList.map((socialIcon) => <li><img src={socialIcon}/></li>)}
+    {socialMediaList.map((social) => <li><img loading="lazy" alt={social.altTag} src={social.url}/></li>)}
   </ul>
 </footer>

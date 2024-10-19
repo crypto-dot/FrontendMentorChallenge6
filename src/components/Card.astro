@@ -3,12 +3,13 @@ interface Props {
   title: string,
   desc: string,
   svgURL: string,
+  altTag: string
 }
-const {title, desc, svgURL} = Astro.props;
+const {title, desc, svgURL, altTag} = Astro.props;
 ---
 
 <article class="relative bg-white class pt-[4.8125rem] px-8 pb-8 mx-6 rounded-sm z-10 sm:max-w-[500px]">
     <h1 class="text-center font-bold tracking-tighter leading-extraLoose text-lgDesk text-primarytxt mb-3">{title}</h1>
-  <div class="absolute top-[-2.75rem] w-statsIcons h-statsIcons bg-secondary rounded-statsIcons flex items-center justify-center left-[calc(50%-2.75rem)]"><img class="h-10 w-10" src={svgURL}/></div>
+    <div class="absolute top-[-2.75rem] w-statsIcons h-statsIcons bg-secondary rounded-statsIcons flex items-center justify-center left-[calc(50%-2.75rem)]"><img class="h-10 w-10" loading="lazy" alt={altTag}  src={svgURL}/></div>
     <p class="text-center text-secondarytxt font-medium text-sm leading-tight"> {desc} </p>
 </article>

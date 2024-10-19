@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { ListOfShortLinks } from './ListOfShortLinks'
-import {ShortLink} from '../types';
+import type { ShortLink } from '../types';
 import {dummyData} from '../dummyData'
 import React from 'react';
 export const LinkShortner = () => {
-  const [shortLinks, setShortLinks] = useState<ShortLink[]>(dummyData);
+  const shortLinks = dummyData;
   const handleSubmit = (e : React.FormEvent) => {
     e.preventDefault();
   }

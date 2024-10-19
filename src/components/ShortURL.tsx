@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import { useState } from "react"
 export const ShortURL = (props: { shortURL: string, longURL: string}) => {
   const [isCopied,setIsCopied] = useState<boolean>(false);
   const copyTextToClipboard = async (text : string): Promise<boolean | void> => {
