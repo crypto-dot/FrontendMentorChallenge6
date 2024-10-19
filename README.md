@@ -1,20 +1,17 @@
-# Astro Starter Kit: Basics
+# Goal
 
-```
-npm create astro@latest -- --template basics
-```
+Goal of this project is to work more on my backend skills and try out some new (to me at least) and different technologies (Astro, Hook React Forms, Redis, Deno 2, Typescript, Zod, SSO). I will not be building out a full and functioning site since that is beyond the scope of this project. The only pages that are going to be worked on is the log-in pages and the main home page (where users can see and shorten links). Users should be able to log in to a google account (Sticking solely with Google for learning purposes) and generate a link every 24 hours (throttling this for obvious reasons). Link stats (how many people clicked on it, what country are they from, etc.) might be done but I would have to see where I am before undertaking that.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+## 🚩 Issues
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+* Currently the only pages that are a WIP are the sign in and get started pages (Both will be google logins that redirect to home)
+* Maybe an account page? Users should not be able to see the sign in buttons afterwards but it would be awkward just leaving blank spaces where content should go.
+* Dummy data is being used on the frontend and needs to be changed for actual data
+* Users need to be able to submit valid links (Validation) and have them shortned (Setting up the backend)
 
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
@@ -25,16 +22,15 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   └── Card.astro
 │   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   |── pages/
+│   |    └── index.astro
+│   └── styles/
+│       └── global.css
 └── package.json
+├── fonts/
+│   └── Poppins-Bold.ttf
+
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -49,6 +45,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
