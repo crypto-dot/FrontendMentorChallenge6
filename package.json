@@ -6,12 +6,13 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
-		"preview": "astro preview",
+		"preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
 		"astro": "astro"
 	},
 	"dependencies": {
 		"@astrojs/react": "^3.6.2",
 		"@astrojs/tailwind": "^5.1.2",
+		"@deno/astro-adapter": "^0.1.3",
 		"@types/react": "^18.0.28",
 		"@types/react-dom": "^18.0.11",
 		"astro": "^4.16.6",
