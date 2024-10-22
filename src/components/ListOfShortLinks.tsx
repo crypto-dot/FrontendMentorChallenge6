@@ -1,6 +1,5 @@
 import type { ShortLink } from "../types";
 import { ShortURL } from "./ShortURL"
-import React from "react"
 export const ListOfShortLinks = (props: {shortURLs: ShortLink[]}) => {
   
   return (
