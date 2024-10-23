@@ -12,9 +12,6 @@ import {
 
 const queryClient = new QueryClient()
 export const LinkShortner = () => {
-
-
-
   return (
     <QueryClientProvider client={queryClient}>
       <div className='bg-statsSectionBg sm:flex sm:justify-center'>
