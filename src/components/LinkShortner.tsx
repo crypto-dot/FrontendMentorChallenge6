@@ -1,11 +1,6 @@
 import { ListOfShortLinks } from './ListOfShortLinks'
-import type { ShortLink } from '../types';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 import { LinkShortnerForm } from './LinkShortnerForm';
 import {
-  useQuery,
-
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
