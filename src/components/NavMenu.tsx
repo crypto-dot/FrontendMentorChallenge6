@@ -20,7 +20,7 @@ export const NavMenu = () => {
     <nav role="navigation">
         <div ref={nav as React.RefObject<HTMLDivElement>} aria-hidden={!isOpen} className="max-w-[28.5rem] sm:left-[calc(50vw-14.25rem)] absolute w-[calc(100%-3rem)] left-6 top-24 bg-callToActionBg z-10 rounded hidden"
              id="navMenu" 
-          >
+          >     
             <ul className="px-6 pt-10 pb-[1.9375rem] flex flex-col gap-[1.875rem]">
                 <li className="text-center"><a href="">Features</a></li>
                 <li className="text-center"><a href="">Pricing</a></li>
@@ -29,9 +29,9 @@ export const NavMenu = () => {
             <ul
                 className="px-6 pb-10 pt-[1.9375rem] flex flex-col items-center py-px-[2rem] gap-[1.875rem] before:absolute before:top-0 before:h-[1px] before:bg-secondarytxt before:w-[80%] before:left-[10%] relative"
             >
-                <li className="text-center"><a href="">{'Login'}</a></li>
+                <li className="text-center"><a href="/signin">Login</a></li>
                 <li className="text-center flex justify-center max-w-[100%]">
-                    <a href="" className=" hover:bg-primary-hover focus:bg-primary-hover bg-primary w-btnSm h-btnMd flex items-center justify-center rounded-btn"
+                    <a href="/signin" className=" hover:bg-primary-hover focus:bg-primary-hover bg-primary w-btnSm h-btnMd flex items-center justify-center rounded-btn"
                         >Setup</a>
                 </li>
             </ul>

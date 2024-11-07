@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { ShortLink } from "../types";
+import type { ShortLink } from "../../types";
 import { ShortURL } from "./ShortURL"
 import {
   useQuery
