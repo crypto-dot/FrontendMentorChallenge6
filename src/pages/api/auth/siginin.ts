@@ -5,6 +5,7 @@ export const POST: APIRoute = async ({ request, cookies, redirect }) => {
   const formData = await request.formData();
   const email = formData.get("email")?.toString();
   const password = formData.get("password")?.toString();
+  console.log(email, password);
 
   if (!email || !password) {
     return new Response("Email and password are required", { status: 400 });

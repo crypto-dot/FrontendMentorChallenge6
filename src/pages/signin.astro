@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SignIn from "../components/SignIn/SignIn";
 
 const { cookies, redirect } = Astro;
 
@@ -12,12 +13,6 @@ if (accessToken && refreshToken) {
 ---
 
 <div class="flex flex-col items-center justify-center h-screen">
-<h1 class="text-3xl font-bold text-primarytxt mb-4">Sign In</h1>
-<form action="/api/auth/signin" method="POST" class="flex flex-col gap-4">
-    <label for="email" class="text-secondarytxt">Email</label>
-    <input type="email" name="email" id="email" required class="p-2 border border-secondarytxt rounded-md" />
-    <label for="password" class="text-secondarytxt">Password</label>
-    <input type="password" name="password" id="password" required class="p-2 border border-secondarytxt rounded-md" />
-    <button type="submit" class="bg-primarytxt text-white p-2 rounded-md">Sign In</button>
-</form>
+    <h1 class="text-3xl font-bold text-primarytxt mb-4">Sign In</h1>
+    <SignIn/>
 </div>
