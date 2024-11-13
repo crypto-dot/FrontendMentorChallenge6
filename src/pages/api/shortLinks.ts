@@ -1,9 +1,8 @@
 import type { APIRoute } from "astro";
 import { dummyData } from '../../data/dummyData.ts';
 
-export const POST: APIRoute = async ({ request }) => {
-    console.log("test")
-    return new Response(null, { status: 200 });
+export const POST: APIRoute = async ({ request,  redirect }) => {
+  return redirect("/signin");
 };
 
 export const GET: APIRoute = async () => {

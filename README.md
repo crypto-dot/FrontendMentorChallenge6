@@ -8,6 +8,10 @@ Goal of this project is to work more on my backend skills and try out some new (
 * Maybe an account page? Users should not be able to see the sign in buttons afterwards but it would be awkward just leaving blank spaces where content should go.
 * Dummy data is being used on the frontend and needs to be changed for actual data
 * Users need to be able to submit valid links (Validation) and have them shortned (Setting up the backend)
+* Look in to client side redirects (using react router or tanstack router - latter seems more promising)
+* Auth sign up emails are being sent however the links being supplied to confirm a user are invalid
+* Customize emails? - at least have the user's username or email when they get prompted to confirm
+
 
 
 ## 🚀 Project Structure

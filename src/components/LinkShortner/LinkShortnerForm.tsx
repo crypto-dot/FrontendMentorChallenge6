@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { Form, useForm } from "react-hook-form";
 import type { FieldValues, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,7 +18,7 @@ export function LinkShortnerForm() {
 
     const mutation = useMutation({
         mutationFn: (data: { url: string }) => {
-            return axios.post('/api/resources', data);
+            return axios.post('/api/shortLinks', { longURL: data });
         }
     });
 

@@ -21,7 +21,7 @@ function SignInForm() {
 
     const mutation = useMutation({
         mutationFn: (data: FieldValues) => {
-            return axios.post('/api/auth/signin', data);
+            return axios.post("/api/auth/register", data);
         }
     });
 
@@ -33,15 +33,15 @@ function SignInForm() {
 
 return (
     <form onSubmit={handleSubmit(onSubmit as SubmitHandler<FieldValues>)} className="flex flex-col gap-4" noValidate >
-        <label htmlFor="email" className="text-secondarytxt">Email</label>
-        <div>
+        <div className="flex flex-col">
+        <label htmlFor="email" className="text-secondarytxt">Email</label> 
             <input  {...register("email")} type="email"   className="p-2 border border-secondarytxt rounded-md"  required/>
-            {errors.email?.message && <span className='text-white bg-error mb-[2.375rem] w-btnMd pl-2 h-7 flex items-center w-full'>{errors.email?.message as string}</span>}
+            {errors.email?.message && <span className="text-white bg-error pl-2 h-7 flex items-center w-full">{errors.email?.message as string}</span>}
         </div>
-        <div>
+        <div className="flex flex-col">
             <label htmlFor="password" className="text-secondarytxt">Password</label>
             <input {...register("password")} type="password"   className="p-2 border border-secondarytxt rounded-md" required />
-            {errors.password?.message && <span className='text-white bg-error mb-[2.375rem] w-btnMd pl-2 h-7 flex items-center'>{errors.password?.message as string}</span>}
+            {errors.password?.message && <span className="text-white bg-error pl-2 h-7 flex items-center w-full">{errors.password?.message as string}</span>}
         </div>
         <input type="submit" className="bg-primarytxt text-white p-2 rounded-md" value={"Sign In"}/>
     </form>
